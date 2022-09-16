@@ -1,0 +1,4 @@
+# bigDGeneral_pmc-IPCA-select-SPARK project
+    Tanto o projeto bigDVarejoPMC quanto o bigDGeneral_IPCA geraram arquivos parquet que foram armazenados em s3 buckets na AWS Cloud, sendo catalogados pelo Glue Data Catalog e disponibilizados para consultas através do AWS Athena e AWS Quicksight.
+
+    Agora surgiu a necessidade de se usar o Databricks com linguagem python e SQL, fazendo uso dos recursos do Spark utilizando o pyspark, acessando os dados que estão nos arquivos parquet gravados anteriormente e disponibilizados em buckets s3, sendo possível, o acesso direto a esses arquivos e carga em spark dataframes e pandas dataframes para posteriormente serem utilizados para geração de gráficos estatísticos e insights com o pyspark e pandas no código.
